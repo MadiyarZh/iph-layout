@@ -11,20 +11,31 @@
 <body>
     <header>
         <div class="container">
-            <div class="row align-items-center justify-content-space-between">
-                <div class="logo col-lg-3">
+            <div class="header row align-items-center justify-content-space-between">
+                <div class="logo col-lg-3 col-md-8">
                     <a href="/">
                         <img class="logo-img" src="img/logo/logo-header.png" alt="logo">
                     </a>
                 </div>
-                <div class="col-lg-9">
+                <div class="header-wrapper col-lg-9 col-md-12">
                     <div class="header-top">
+                        <button type="submit" class="mobile-search-btn">
+                            <img class="basic-search-icon" src="img/search-icon.svg" alt="search-icon">
+                            <img class="dark-mode-search-icon" src="img/search-white-icon.svg" alt="search-white-icon">
+                        </button>
                         <form class="search">
                             <input type="text" class="search-input" placeholder="Поиск">
-                            <button type="submit"><img src="img/search-icon.svg" alt="search-icon"></button>
+                            <button type="submit">
+                                <img class="basic-search-icon" src="img/search-icon.svg" alt="search-icon">
+                                <img class="dark-mode-search-icon" src="img/search-white-icon.svg" alt="search-white-icon">
+                            </button>
                         </form>
-                        <div class="sun-btn">
-                            <img src="img/sun-icon.svg" alt="sun-icon">
+                        <div class="page-color-change-btns">
+                            <img src="img/basic-theme-btn.svg" alt="basic-theme-btn">
+                            <img src="img/dark-theme-btn.svg" alt="dark-theme-btn">
+                        </div>
+                        <div class="burger-menu">
+                            <img src="img/burger-menu.svg" alt="burger-menu">
                         </div>
                         <div class="languages">
                             <a href="#" class="basic-btn lang-btn">Каз</a>
@@ -34,8 +45,11 @@
                     </div>
                     <div class="header-nav" id="myTopnav">
                         <div class="dropdown">
-                            <a class="dropbtn" href="/article-detailed.html">Структура 
-                                <i class=""><img src="img/down-arrow-icon.svg" alt=""></i>
+                            <a class="dropbtn" href="/structure.html">Структура 
+                                <i class="">
+                                    <img class="basic-down-arrow-icon" src="img/down-arrow-icon.svg" alt="down-arrow-icon">
+                                    <img class="dark-mode-down-arrow-icon" src="img/down-arrow-dark-mode-icon.svg" alt="down-arrow-dark-mode-icon">
+                                </i>
                             </a>
                             <div class="dropdown-content d-flex">
                                 <div class="left-side">
@@ -56,7 +70,10 @@
                         </div> 
                         <div class="dropdown">
                             <a class="dropbtn" href="#">Исследования 
-                                <i class=""><img src="img/down-arrow-icon.svg" alt=""></i>
+                                <i class="">
+                                    <img class="basic-down-arrow-icon" src="img/down-arrow-icon.svg" alt="">
+                                    <img class="dark-mode-down-arrow-icon" src="img/down-arrow-dark-mode-icon.svg" alt="down-arrow-dark-mode-icon">
+                                </i>
                             </a>
                             <div class="dropdown-content">
                                 <a href="#">Планы и отчеты Института</a>
@@ -68,7 +85,10 @@
                         </div>
                         <div class="dropdown">
                             <a class="dropbtn" href="#">Издания 
-                                <i class=""><img src="img/down-arrow-icon.svg" alt=""></i>
+                                <i class="">
+                                    <img class="basic-down-arrow-icon" src="img/down-arrow-icon.svg" alt="">
+                                    <img class="dark-mode-down-arrow-icon" src="img/down-arrow-dark-mode-icon.svg" alt="down-arrow-dark-mode-icon">
+                                </i>
                             </a>
                             <div class="dropdown-content">
                                 <a href="soglashenie-o-sotrudnichestvo-kaz.html">Журналы института</a>
@@ -79,10 +99,13 @@
                         </div>
                         <div class="dropdown">
                             <a class="dropbtn" href="#">Cотрудничество 
-                                <i class=""><img src="img/down-arrow-icon.svg" alt=""></i>
+                                <i class="">
+                                    <img class="basic-down-arrow-icon" src="img/down-arrow-icon.svg" alt="">
+                                    <img class="dark-mode-down-arrow-icon" src="img/down-arrow-dark-mode-icon.svg" alt="down-arrow-dark-mode-icon">
+                                </i>
                             </a>
                             <div class="dropdown-content">
-                                <a href="#">Соглашения о сотрудничестве с отечественными организациями</a>
+                                <a href="soglashenie-o-sotrudnichestvo.html">Соглашения о сотрудничестве с отечественными организациями</a>
                                 <a href="#">Соглашения о сотрудничестве с зарубежными организациями</a>
                                 <a href="#">Зарубежные командировки, стажировки</a>
                             </div>
@@ -217,21 +240,37 @@
         <img class="background-right-icon" src="img/oyu-right-icon.svg" alt="oyu-right-icon">
         <img class="background-left-icon" src="img/oyu-left-icon.svg" alt="oyu-right-icon">
     </div>
-    <footer class="">
+    <footer>
         <div class="container">
             <img src="img/globus-icon.png" alt="globus-icon" class="footer-background-img">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="logo">
                         <a href="/index.html">
-                            <img  class="logo-img" src="img/logo/logo-footer.png" alt="logo">                            
+                            <img class="logo-img" src="img/logo/logo-footer.png" alt="logo">                            
                         </a>
                     </div>
                     <div class="scroll-top-btn">
                         <img src="img/up-arrow-icon.svg" alt="up">
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12 mobile-social-icons">
+                    <div class="right-side basic-right-side">
+                        <a href="#"><img src="img/youtube-icon.svg" alt="youtube-icon"></a>
+                        <a href="#"><img src="img/facebook-icon.svg" alt="facebook-icon"></a>
+                        <a href="#"><img src="img/telegram-icon.svg" alt="telegram-icon"></a>
+                        <a href="#"><img src="img/instagram-icon.svg" alt="instagram-icon"></a>
+                        <a href="#"><img src="img/whatsapp-icon.svg" alt="whatsapp-icon"></a>
+                    </div>
+                    <div class="right-side dark-mode-right-side">
+                        <a href="#"><img src="img/youtube-icon-dark-mode.svg" alt="youtube-icon"></a>
+                        <a href="#"><img src="img/facebook-icon-dark-mode.svg" alt="facebook-icon"></a>
+                        <a href="#"><img src="img/telegram-icon-dark-mode.svg" alt="telegram-icon"></a>
+                        <a href="#"><img src="img/instagram-icon-dark-mode.svg" alt="instagram-icon"></a>
+                        <a href="#"><img src="img/whatsapp-icon-dark-mode.svg" alt="whatsapp-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-menu col-lg-4 col-md-12">
                     <ul class="footer-menu-list">
                         <li>
                             <a href="#">
@@ -317,7 +356,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="footer-menu col-lg-4 col-md-12">
                     <ul class="footer-menu-list">
                         <li>
                             <a href="#">
@@ -338,7 +377,7 @@
                             <a href="#">
                                 Научная программа "Народ в Потоке Истории" (2014-2016 гг.)
                             </a>
-                        </li>0
+                        </li>
                         <li>
                             <a href="#">
                                 Тематический план исследований (2013-2015 гг.)
@@ -373,7 +412,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="footer-menu col-lg-4 col-md-12">
                     <ul class="footer-menu-list">
                         <li>
                             <a href="#">

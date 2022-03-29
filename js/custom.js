@@ -58,6 +58,7 @@ tabs.forEach(tab => {
 // Equal Height
 
 $(window).on("load resize", function () {
+
     var maxHeight = 0;
     $(".news-block .card-item").find(".card-name").each(function () {
         if ($(this).height() > maxHeight) {
@@ -70,4 +71,45 @@ $(window).on("load resize", function () {
             maxHeight = $(this).height();
         }
     }).height(maxHeight);
+
+    $(".articles-block .card-item").find(".card-name").each(function () {
+      if ($(this).height() > maxHeight) {
+          maxHeight = $(this).height();
+      }
+    }).height(maxHeight);
+
+});
+
+
+
+// Change page color btn
+
+$('.page-color-change-btns').on('click',function(){
+  $('.page-color-change-btns img:first-child').toggleClass('transition-top');
+  $(this).toggleClass('dark-color');
+  $('body').toggleClass('dark-mode');
+});
+
+// Mobile menu open-close 
+
+$('.burger-menu').on('click',function(){
+  $('.header-wrapper').toggleClass('opened');
+  $('.page-color-change-btns').toggleClass('visible');
+  $('.header').toggleClass('visible');
+});
+
+// Search
+
+$('.mobile-search-btn').on('click',function(){
+  $('.search').toggleClass('opened');
+});
+
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+
+   //>=, not <=
+  if (scroll >= 50) {
+      //clearHeader, not clearheader - caps H
+      $('.search').removeClass('opened');
+  }
 });

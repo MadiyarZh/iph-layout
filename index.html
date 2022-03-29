@@ -11,20 +11,31 @@
 <body>
     <header>
         <div class="container">
-            <div class="row align-items-center justify-content-space-between">
-                <div class="logo col-lg-3">
+            <div class="header row align-items-center justify-content-space-between">
+                <div class="logo col-lg-3 col-md-8">
                     <a href="/">
                         <img class="logo-img" src="img/logo/logo-header.png" alt="logo">
                     </a>
                 </div>
-                <div class="col-lg-9">
+                <div class="header-wrapper col-lg-9 col-md-12">
                     <div class="header-top">
+                        <button type="submit" class="mobile-search-btn">
+                            <img class="basic-search-icon" src="img/search-icon.svg" alt="search-icon">
+                            <img class="dark-mode-search-icon" src="img/search-white-icon.svg" alt="search-white-icon">
+                        </button>
                         <form class="search">
                             <input type="text" class="search-input" placeholder="Поиск">
-                            <button type="submit"><img src="img/search-icon.svg" alt="search-icon"></button>
+                            <button type="submit">
+                                <img class="basic-search-icon" src="img/search-icon.svg" alt="search-icon">
+                                <img class="dark-mode-search-icon" src="img/search-white-icon.svg" alt="search-white-icon">
+                            </button>
                         </form>
-                        <div class="sun-btn">
-                            <img src="img/sun-icon.svg" alt="sun-icon">
+                        <div class="page-color-change-btns">
+                            <img src="img/basic-theme-btn.svg" alt="basic-theme-btn">
+                            <img src="img/dark-theme-btn.svg" alt="dark-theme-btn">
+                        </div>
+                        <div class="burger-menu">
+                            <img src="img/burger-menu.svg" alt="burger-menu">
                         </div>
                         <div class="languages">
                             <a href="#" class="basic-btn lang-btn">Каз</a>
@@ -35,7 +46,10 @@
                     <div class="header-nav" id="myTopnav">
                         <div class="dropdown">
                             <a class="dropbtn" href="/structure.html">Структура 
-                                <i class=""><img src="img/down-arrow-icon.svg" alt=""></i>
+                                <i class="">
+                                    <img class="basic-down-arrow-icon" src="img/down-arrow-icon.svg" alt="down-arrow-icon">
+                                    <img class="dark-mode-down-arrow-icon" src="img/down-arrow-dark-mode-icon.svg" alt="down-arrow-dark-mode-icon">
+                                </i>
                             </a>
                             <div class="dropdown-content d-flex">
                                 <div class="left-side">
@@ -56,7 +70,10 @@
                         </div> 
                         <div class="dropdown">
                             <a class="dropbtn" href="#">Исследования 
-                                <i class=""><img src="img/down-arrow-icon.svg" alt=""></i>
+                                <i class="">
+                                    <img class="basic-down-arrow-icon" src="img/down-arrow-icon.svg" alt="">
+                                    <img class="dark-mode-down-arrow-icon" src="img/down-arrow-dark-mode-icon.svg" alt="down-arrow-dark-mode-icon">
+                                </i>
                             </a>
                             <div class="dropdown-content">
                                 <a href="#">Планы и отчеты Института</a>
@@ -68,7 +85,10 @@
                         </div>
                         <div class="dropdown">
                             <a class="dropbtn" href="#">Издания 
-                                <i class=""><img src="img/down-arrow-icon.svg" alt=""></i>
+                                <i class="">
+                                    <img class="basic-down-arrow-icon" src="img/down-arrow-icon.svg" alt="">
+                                    <img class="dark-mode-down-arrow-icon" src="img/down-arrow-dark-mode-icon.svg" alt="down-arrow-dark-mode-icon">
+                                </i>
                             </a>
                             <div class="dropdown-content">
                                 <a href="soglashenie-o-sotrudnichestvo-kaz.html">Журналы института</a>
@@ -79,7 +99,10 @@
                         </div>
                         <div class="dropdown">
                             <a class="dropbtn" href="#">Cотрудничество 
-                                <i class=""><img src="img/down-arrow-icon.svg" alt=""></i>
+                                <i class="">
+                                    <img class="basic-down-arrow-icon" src="img/down-arrow-icon.svg" alt="">
+                                    <img class="dark-mode-down-arrow-icon" src="img/down-arrow-dark-mode-icon.svg" alt="down-arrow-dark-mode-icon">
+                                </i>
                             </a>
                             <div class="dropdown-content">
                                 <a href="soglashenie-o-sotrudnichestvo.html">Соглашения о сотрудничестве с отечественными организациями</a>
@@ -100,20 +123,23 @@
     </header>
     <div class="body">
         <div class="main-banner">
+            <img src="img/main-banner-mobile.png" alt="" class="mobile-main-banner">
             <div class="container">
-                <div class="banner-info">
-                    <span class="banner-section">
-                        Государство
-                    </span>
-                    <h1 class="banner-name">
-                        Актуальность концепта будущего для Казахстана, или Догонит ли Ахиллес черепаху?
-                    </h1>
-                    <p class="banner-description">
-                        28 мая 2021 года состоялся круглый стол на тему: «Qazaqstan. Future. Концепции и траектории», организованный аналитическим центром...
-                    </p>
-                    <span class="banner-date">
-                        28 мая 2021
-                    </span>
+                <div class="row">
+                    <div class="banner-info">
+                        <span class="banner-section">
+                            Государство
+                        </span>
+                        <h1 class="banner-name">
+                            Актуальность концепта будущего для Казахстана, или Догонит ли Ахиллес черепаху?
+                        </h1>
+                        <p class="banner-description">
+                            28 мая 2021 года состоялся круглый стол на тему: «Qazaqstan. Future. Концепции и траектории», организованный аналитическим центром...
+                        </p>
+                        <span class="banner-date">
+                            28 мая 2021
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,13 +176,21 @@
                             <img class="oyu-icon" src="img/oyu-icon.svg" alt="oyu-icon">
                         </a>
                     </div>
+                    <div class="article-item news tab more-artiles-mobile-btn" data-tab-target="#tab3">
+                        <a href="" class="all-articles-btn">
+                            <h3>
+                                Больше статей
+                            </h3>
+                            <img class="oyu-icon" src="img/oyu-icon.svg" alt="oyu-icon">
+                        </a>
+                    </div>
                 </div>
     
                 <div id="tab1" data-tab-content class="articles-block active">
                     <div class="row">
-                        <div class="col-lg-8 d-flex flex-wrap gap-30">
+                        <div class="col-lg-8 col-md-12 d-flex flex-wrap gap-30">
                             <div class="main-article">
-                                <img src="img/main-article.png" alt="main-article">
+                                <img src="img/article-1.png" alt="main-article">
                                 <div class="card-info">
                                     <span class="section-name">
                                         Государство
@@ -207,7 +241,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 d-flex flex-column gap-30">
+                        <div class="col-lg-4 col-md-12 d-flex flex-column gap-30">
                             <div class="card-item">
                                 <img src="img/article-1.png" alt="article-1">
                                 <div class="card-info">
@@ -251,7 +285,7 @@
                 <!-- Tab 2 -->
                 <div id="tab2" data-tab-content class="articles-block">
                     <div class="row">
-                        <div class="col-lg-8 d-flex flex-wrap gap-30">
+                        <div class="col-lg-8 col-md-12 d-flex flex-wrap gap-30">
                             <div class="main-article">
                                 <img src="img/article-3.png" alt="main-article">
                                 <div class="card-info">
@@ -304,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 d-flex flex-column gap-30">
+                        <div class="col-lg-4 col-md-12 d-flex flex-column gap-30">
                             <div class="card-item">
                                 <img src="img/article-4.png" alt="article-1">
                                 <div class="card-info">
@@ -348,7 +382,7 @@
                 <!-- Tab 3 -->
                 <div id="tab3" data-tab-content class="articles-block">
                     <div class="row">
-                        <div class="col-lg-8 d-flex flex-wrap gap-30">
+                        <div class="col-lg-8 col-md-12 d-flex flex-wrap gap-30">
                             <div class="main-article">
                                 <img src="img/article-2.png" alt="main-article">
                                 <div class="card-info">
@@ -401,7 +435,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 d-flex flex-column gap-30">
+                        <div class="col-lg-4 col-md-12 d-flex flex-column gap-30">
                             <div class="card-item">
                                 <img src="img/article-3.png" alt="article-1">
                                 <div class="card-info">
@@ -508,7 +542,7 @@
                 <div class="journal-wrapper">
                     <div class="journal-item-block">
                         <div class="journal-item test">
-                            <div>Alpharabi</div> 
+                            <div>Адам Әлемі</div> 
                         </div>
                         <div class="journal-item test">
                             <div>Аль-Фараби</div>
@@ -538,12 +572,19 @@
                     </form>
                     
                 </div>
-                <div class="right-side">
+                <div class="right-side basic-right-side">
                     <a href="#"><img src="img/youtube-icon.svg" alt="youtube-icon"></a>
                     <a href="#"><img src="img/facebook-icon.svg" alt="facebook-icon"></a>
                     <a href="#"><img src="img/telegram-icon.svg" alt="telegram-icon"></a>
                     <a href="#"><img src="img/instagram-icon.svg" alt="instagram-icon"></a>
                     <a href="#"><img src="img/whatsapp-icon.svg" alt="whatsapp-icon"></a>
+                </div>
+                <div class="right-side dark-mode-right-side">
+                    <a href="#"><img src="img/youtube-icon-dark-mode.svg" alt="youtube-icon"></a>
+                    <a href="#"><img src="img/facebook-icon-dark-mode.svg" alt="facebook-icon"></a>
+                    <a href="#"><img src="img/telegram-icon-dark-mode.svg" alt="telegram-icon"></a>
+                    <a href="#"><img src="img/instagram-icon-dark-mode.svg" alt="instagram-icon"></a>
+                    <a href="#"><img src="img/whatsapp-icon-dark-mode.svg" alt="whatsapp-icon"></a>
                 </div>
             </div>
         </div>
@@ -563,7 +604,23 @@
                         <img src="img/up-arrow-icon.svg" alt="up">
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12 mobile-social-icons">
+                    <div class="right-side basic-right-side">
+                        <a href="#"><img src="img/youtube-icon.svg" alt="youtube-icon"></a>
+                        <a href="#"><img src="img/facebook-icon.svg" alt="facebook-icon"></a>
+                        <a href="#"><img src="img/telegram-icon.svg" alt="telegram-icon"></a>
+                        <a href="#"><img src="img/instagram-icon.svg" alt="instagram-icon"></a>
+                        <a href="#"><img src="img/whatsapp-icon.svg" alt="whatsapp-icon"></a>
+                    </div>
+                    <div class="right-side dark-mode-right-side">
+                        <a href="#"><img src="img/youtube-icon-dark-mode.svg" alt="youtube-icon"></a>
+                        <a href="#"><img src="img/facebook-icon-dark-mode.svg" alt="facebook-icon"></a>
+                        <a href="#"><img src="img/telegram-icon-dark-mode.svg" alt="telegram-icon"></a>
+                        <a href="#"><img src="img/instagram-icon-dark-mode.svg" alt="instagram-icon"></a>
+                        <a href="#"><img src="img/whatsapp-icon-dark-mode.svg" alt="whatsapp-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-menu col-lg-4 col-md-12">
                     <ul class="footer-menu-list">
                         <li>
                             <a href="#">
@@ -649,7 +706,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="footer-menu col-lg-4 col-md-12">
                     <ul class="footer-menu-list">
                         <li>
                             <a href="#">
@@ -705,7 +762,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="footer-menu col-lg-4 col-md-12">
                     <ul class="footer-menu-list">
                         <li>
                             <a href="#">
@@ -750,7 +807,7 @@
         </div>
     </footer>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
